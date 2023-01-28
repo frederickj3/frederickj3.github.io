@@ -34,7 +34,7 @@
         MainContent.appendChild(WelcomeHeader);
         MainContent.appendChild(MainParagraph);
         // Set the background image for the home page
-        document.body.style.backgroundImage = "url('/images/indexBackground.jpg')";
+        document.body.style.backgroundImage = "url('images/indexBackground.jpg')";
 
 
     }
