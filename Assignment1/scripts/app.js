@@ -34,7 +34,7 @@
         MainContent.appendChild(WelcomeHeader);
         MainContent.appendChild(MainParagraph);
         // Set the background image for the home page
-        document.body.style.backgroundImage = "url('images/indexBackground.jpg')";
+        document.body.style.backgroundImage = "url('./images/indexBackground.jpg')";
 
 
     }
@@ -49,20 +49,20 @@
         let MainContent = document.getElementsByTagName("main")[0];
         // Create variables to hold the images of each project
         let ProjectOne = document.createElement("img");
-        ProjectOne.src = "/images/projectImage1.PNG";
+        ProjectOne.src = "./images/projectImage1.PNG";
         ProjectOne.alt = "Project 1 image";
         // Adjust the width of project 1's image
         ProjectOne.width=900;
 
         let ProjectTwo = document.createElement("img");
-        ProjectTwo.src = "/images/projectImage2.PNG";
+        ProjectTwo.src = "./images/projectImage2.PNG";
         ProjectTwo.alt = "Project 2 image";
         // Adjust the size of project 2's image
         ProjectTwo.width = 1000;
         ProjectTwo.height = 500;
 
         let ProjectThree = document.createElement("img");
-        ProjectThree.src = "/images/projectImage3.PNG";
+        ProjectThree.src = "./images/projectImage3.PNG";
         ProjectThree.alt = "Project 3 image";
         // Adjust the size of project 3's image
         ProjectThree.height = 400;
@@ -120,11 +120,11 @@
         let ServicesTable = document.createElement("table");
         // Variable to hold the HTML to create the table
         let ServicesTableCode =`<tr>
-                            <td style="text-align:center;"><img src="/images/globe-solid.svg" width="100" height="150"
+                            <td style="text-align:center;"><img src="./images/globe-solid.svg" width="100" height="150"
                              alt="globe"></td>
-                            <td style="text-align:center;"><img src="/images/file-code-solid.svg" width="100" height="150"
+                            <td style="text-align:center;"><img src="./images/file-code-solid.svg" width="100" height="150"
                              alt="code file"></td>
-                            <td style="text-align:center;"><img src="/images/bolt-solid.svg" width="100" height="150"
+                            <td style="text-align:center;"><img src="./images/bolt-solid.svg" width="100" height="150"
                             alt="lightning bolt"></td>
                         </tr>
                         <tr>
@@ -161,9 +161,9 @@
                             <th style="font-size:30px; text-align:center">Mark Spiers</th>
                         </tr>
                         <tr>
-                            <td style="padding-right:20px; text-align:center;"><img src="/images/josh.jpg" width="500" 
+                            <td style="padding-right:20px; text-align:center;"><img src="./images/josh.jpg" width="500" 
                             height="500" alt="Picture of one of the website developers: Josh"></td>
-                            <td style="padding-left:20px; text-align:center;"><img src="/images/mark.jpg" width="500" 
+                            <td style="padding-left:20px; text-align:center;"><img src="./images/mark.jpg" width="500" 
                             height="500" alt="Picture of one of the website developers: Mark"></td>
                         </tr>
                         <tr>
