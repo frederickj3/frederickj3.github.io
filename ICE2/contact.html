@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+
+    <!-- CSS Selection -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+    <header><nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-cloud-moon"></i>WEBD6201</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html"><i class="fa-solid fa-gift"></i> Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"><i class="fa-solid fa-star"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fa-regular fa-address-card"></i> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="container">
+        <h1>Welcome to our Contact Page!</h1>
+
+
+    <div class="row justify-content-lg-center g-3">
+        <form class="col-lg-6 col-md-10 col-sm-10">
+            <!-- Full Name box -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Full Name</span>
+                <input id="fullName" name="fullName" type="text" class="form-control"
+                       aria-describedby="Full Name Input" aria-label="Full Name Input" required>
+            </div>
+
+            <!-- Contact Number box -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Contact Number</span>
+                <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                       aria-describedby="Contact Number Input" aria-label="Contact Number Input" required>
+            </div>
+
+            <!-- Email Address box -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Email address</span>
+                <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                       aria-describedby="Email Address Input" aria-label="Email Address Input" required>
+            </div>
+
+            <!-- Users message -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Your message</span>
+                <textarea id="message" name="message" class="form-control" aria-label="Message Area"></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="mb-3 form-check">
+                <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" class="form-check-input" >
+                <label class="form-check-label" for="subscribeCheckbox">Subscribe to our contact list </label>
+            </div>
+
+            <!-- Submit & Cancel buttons -->
+            <button id="sendButton" type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i>Send</button>
+            <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i>Cancel</button>
+
+        </form>
+
+        <div class="col-lg-4 col-md-4">
+            <a href="contact-list.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-users fa-lg">Show Contact List</i></a>
+        </div>
+
+    </div>
+
+
+    </main>
+    <!-- Scripting Section -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts/namespace.js"></script>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
