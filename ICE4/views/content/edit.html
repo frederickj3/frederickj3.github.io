@@ -1,0 +1,34 @@
+<h1>Edit Contact</h1>
+
+<div id="messageArea"></div>
+
+<div class="row justify-content-lg-center g-3">
+    <form class="col-lg-6 col-md-10 col-sm-10">
+        <!-- Full Name box -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Full Name</span>
+            <input id="fullName" name="fullName" type="text" class="form-control"
+                   aria-describedby="Full Name Input" aria-label="Full Name Input" required>
+        </div>
+
+        <!-- Contact Number box -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Contact Number</span>
+            <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                   aria-describedby="Contact Number Input" aria-label="Contact Number Input" required>
+        </div>
+
+        <!-- Email Address box -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email address</span>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="Email Address Input" aria-label="Email Address Input" required>
+        </div>
+
+        <!-- Submit & Cancel buttons -->
+        <button id="editButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>
+        <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
+
+</form>
+
+</div>
