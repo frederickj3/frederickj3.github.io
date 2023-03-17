@@ -127,8 +127,8 @@
      */
     function LoadContent(): void
     {
-        let page_name = router.ActiveLink; // alias for the Active Link
-        let callback = ActiveLinkCallBack(); // returns a reference to the correct function
+        let page_name : string = router.ActiveLink; // alias for the Active Link
+        let callback : Function = ActiveLinkCallBack(); // returns a reference to the correct function
         $.get(`./Views/content/${page_name}.html`, function(html_date)
         {
             $("main").html(html_date);
